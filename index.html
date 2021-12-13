@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        #div1 {
-            width: 33.33%;
-            float: right;
-            background-color: cornsilk;
-        }
-
-        #div2 {
-            width: 33.33%;
-            float: left;
-            background-color: cornsilk
-        }
-
-        #div3 {
-            width: 33.33%;
-            margin: 0 auto;
-            background-color: cornsilk
-        }
-        #div4 {
-            background-color:burlywood;
-        }
-    </style>
-</head>
-<body>
-  <h1><hr><center><div id="div4">Student Profile</div></center><hr></h1> 
-  <h2><br><center><img src="OIP.jpg" alt="picture of students"</center><br><hr></h2>
-  <center><div id="div1"><a href="My activity.html">My Activity</a></div></center>
-  <center><div id="div2"><a href="Home.html">Home</a></div></center>
-  <center><div id="div3"><a href="My profile.html">Profile</a></div></center><hr>
-  <details>
-      <summary>Personal Information</summary>
-      <p><ol>1.Name: Eric</ol></p>
-      <p><ol>2.Birth date 12/12/12</ol></p>
-  </details>
-  <details>
-      <summary>Contact Information</summary>
-  </details>
-  <details>
-      <summary>School Information</summary>
-  </details>
-  <details>
-      <summary>Hobbies</summary>
-  </details>
-  <p><footer><center>Created by NXU New students and retake students.
-      <br/>Copyright@Ningxia University.2021</center></footer></p>
-</body>
+    <head>
+        <script type="text/javascript" src="index.js"></script>
+        <title>Application Form</title>
+    </head>
+    <body>
+      <form action="results.html" method="get" id="form">
+        <div>
+            <label>Full Name</label>
+        </div>
+        <div>
+            <input type="text" name="Full Name" id="name" required>
+        </div>
+        <div>
+            <label>Email Address</label>
+        </div>
+        <div>
+            <input type="email" name="Email Address" id="email" required>
+        </div>
+        <div>
+            <label for="Mobile Number">Mobile Number</label>
+        </div>
+        <div>
+            <input type="tel" name="Mobile Number" required min="11" max="13" id="number">
+        </div>
+        <div>
+            <label for="Country">Country</label>
+        </div>
+        <div>   
+            <select name="Country">
+                <option value="United Kingdom">United Kingdom</option>
+            </select>
+        </div>
+        <div>
+            Gender
+        </div>
+        <div>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" value="Female">
+        </div>
+        <div>
+            Hobbies
+        </div>
+        <div>
+            <label for="Sports">Sports</label>
+            <input type="checkbox" name="Sports">
+            <label for="Movies">Movies</label>
+            <input type="checkbox" name="Movies">
+            <label for="Music">Music</label>
+            <input type="checkbox" name="Music">
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </body>
 </html>
